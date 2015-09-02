@@ -1,0 +1,23 @@
+.front{
+	position: relative;
+	backface-visibility: hidden;
+}
+
+.back{
+	top: 110px;
+	position: absolute;
+	z-index: -1;
+	backface-visibility: hidden;
+}
+
+.portfolio-item:hover .front{
+	transform: rotateY(180deg);
+	transition: 1s;
+}
+
+.portfolio-item:hover .back{
+	transform: rotateY(360deg);
+	transition: 1s;
+}
+
+
